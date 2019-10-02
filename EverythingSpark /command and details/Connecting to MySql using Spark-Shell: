@@ -1,0 +1,16 @@
+Connecting to MySql using Spark-Shell:
+
+Starting the SparkShell with the jars needed:
+Command:
+spark-shell --driver-class-path /Users/kartikeyan/Desktop/Air-dataset/jary/mysql-connector-java-8.0.16.jar --jars /Users/kartikeyan/Desktop/Air-dataset/jary/mysql-connector-java-8.0.16.jar
+
+After Reading the file we need to connect using string Command:
+val pgDF = spark.read.format("jdbc").option("driver", "com.mysql.jdbc.Driver").option("url", "jdbc:mysql://localhost:3306/recipes_database?useLegacyDatetimeCode=false&serverTimezone=UTC").option("dbtable", "recipes_database.recipes").option("user", "root").option("password","light").load()
+
+Everything is gonna be same as the above except for the IP address Database name and also the password which we need to do 
+
+My Database Name : "root"
+My Database password : "light"
+
+Jar which is needed to be included while spinning up the spark-shell is :
+mysql-connector-java-8.0.16.jar
