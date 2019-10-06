@@ -14,3 +14,11 @@ My Database password : "light"
 
 Jar which is needed to be included while spinning up the spark-shell is :
 mysql-connector-java-8.0.16.jar
+
+Auto downloading of jars or dependencies of Mysql:
+spark2-shell --packages mysql:mysql-connector-java:8.0.16
+
+
+
+
+
