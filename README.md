@@ -1,3 +1,3 @@
 # SpeciallySpark
-Data Related to Spark(good).
-Also other changes_1 are included
+Data Related to Spark.
+Also other changes 1 and 2 are included
